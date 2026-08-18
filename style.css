@@ -34,14 +34,15 @@ body {
 }
 
 .logo-colegio {
-  width: 120px;
-  height: 90px;
+  width: 145px;
+  height: 105px;
   object-fit: contain;
+  transform: translateY(-8px);
 }
 
 .logo-eureka {
-  width: 120px;
-  height: 90px;
+  width: 125px;
+  height: 105px;
   object-fit: contain;
 }
 
@@ -82,10 +83,10 @@ body {
 
 .tilde-brujula {
   position: absolute;
-  top: -10px;
+  top: -6px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
   color: #173d22;
   line-height: 1;
