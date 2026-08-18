@@ -88,3 +88,19 @@ body {
 .boton-comenzar:hover {
   transform: scale(1.03);
 }
+/* ===== ILUSTRACIÓN DE LA PORTADA ===== */
+
+.zona-ilustracion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.ilustracion-portada {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
