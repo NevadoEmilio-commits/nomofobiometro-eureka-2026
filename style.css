@@ -58,8 +58,16 @@ body {
   font-weight: 800;
   margin-top: 4px;
   color: #173d22;
+  white-space: nowrap;
 }
-
+.brujula-titulo {
+  width: 30px;
+  height: 30px;
+  vertical-align: -2px;
+  margin: 0 1px;
+  display: inline-block;
+  object-fit: contain;
+}
 .subtitulo {
   text-align: center;
   font-size: 21px;
@@ -139,4 +147,14 @@ body {
 .datos-portada span + span {
   border-left: 1px solid #20a873;
   padding-left: 5px;
+}
+/* ===== BRÚJULA DEL TÍTULO ===== */
+
+.brujula-titulo {
+  width: 30px;
+  height: 30px;
+  vertical-align: -2px;
+  margin: 0 1px;
+  display: inline-block;
+  object-fit: contain;
 }
