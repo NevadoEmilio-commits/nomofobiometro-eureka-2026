@@ -68,6 +68,21 @@ body {
   display: inline-block;
   object-fit: contain;
 }
+.o-brujula {
+  position: relative;
+  display: inline-block;
+}
+
+.tilde-brujula {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: 800;
+  color: #173d22;
+  line-height: 1;
+}
 .subtitulo {
   text-align: center;
   font-size: 21px;
