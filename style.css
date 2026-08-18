@@ -22,7 +22,7 @@ body {
   background: white;
   position: relative;
   overflow: hidden;
-  padding: 18px 24px 40px;
+  padding: 8px 18px 35px;
 }
 
 /* Logos superiores */
@@ -33,18 +33,18 @@ body {
 }
 
 .logo-colegio {
-  width: 82px;
+  width: 105px;
   height: auto;
 }
 
 .logo-eureka {
-  width: 75px;
+  width: 90px;
   height: auto;
 }
 
 /* Textos */
 .area {
-  margin-top: 8px;
+  margin-top: 2px;
   text-align: center;
   font-size: 15px;
   font-weight: 500;
@@ -53,33 +53,31 @@ body {
 
 .titulo {
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
   line-height: 1;
   font-weight: 800;
-  margin-top: 6px;
+  margin-top: 4px;
   color: #173d22;
 }
 
 .subtitulo {
   text-align: center;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1.05;
-  margin-top: 14px;
+  margin-top: 10px;
   color: #353535;
 }
 
 /* Botón principal */
 .boton-comenzar {
   display: block;
-  width: 250px;
-  margin: 25px auto 0;
-  padding: 12px 15px;
+  width: 245px;
+  margin: 12px auto 0;
+  padding: 10px 12px;
   border: none;
   border-radius: 35px;
-
   background: #22a56f;
   color: white;
-
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -94,13 +92,13 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .ilustracion-portada {
   display: block;
   width: 100%;
-  max-width: 350px;
+  max-width: 320px;
   height: auto;
   object-fit: contain;
 }
@@ -108,10 +106,10 @@ body {
 
 .descripcion-portada {
   text-align: center;
-  font-size: 14px;
-  line-height: 1.25;
+  font-size: 13px;
+  line-height: 1.2;
   color: #222;
-  margin: 8px 20px 14px;
+  margin: 5px 10px 10px;
 }
 
 .descripcion-portada strong {
@@ -124,20 +122,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   margin-top: 8px;
-  font-size: 9px;
+  font-size: 8px;
   color: #333;
   white-space: nowrap;
+  width: 100%;
 }
 
 .datos-portada span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 2px;
 }
 
 .datos-portada span + span {
   border-left: 1px solid #20a873;
-  padding-left: 8px;
+  padding-left: 5px;
 }
