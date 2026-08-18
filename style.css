@@ -37,13 +37,14 @@ body {
   width: 145px;
   height: 105px;
   object-fit: contain;
-  transform: translateY(-8px);
+  transform: translateY(-2px) scale(1.45);
 }
 
 .logo-eureka {
   width: 125px;
   height: 105px;
   object-fit: contain;
+  transform: translateY(2px) scale(1.35);
 }
 
 /* Textos */
@@ -83,7 +84,7 @@ body {
 
 .tilde-brujula {
   position: absolute;
-  top: -6px;
+  top: 1px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
