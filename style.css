@@ -75,10 +75,10 @@ body {
 
 .tilde-brujula {
   position: absolute;
-  top: -11px;
-  left: 50%;
+  top: -7px;
+  left: 58%;
   transform: translateX(-50%);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
   color: #173d22;
   line-height: 1;
@@ -166,8 +166,8 @@ body {
 /* ===== BRÚJULA DEL TÍTULO ===== */
 
 .brujula-titulo {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   vertical-align: -2px;
   margin: 0 1px;
   display: inline-block;
