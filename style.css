@@ -118,3 +118,26 @@ body {
   color: #20a873;
   font-weight: 700;
 }
+/* ===== DATOS INFERIORES DE LA PORTADA ===== */
+
+.datos-portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 9px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.datos-portada span {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.datos-portada span + span {
+  border-left: 1px solid #20a873;
+  padding-left: 8px;
+}
