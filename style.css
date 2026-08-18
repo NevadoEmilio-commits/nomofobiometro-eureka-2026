@@ -77,10 +77,10 @@ body {
 
 .tilde-brujula {
   position: absolute;
-  top: -7px;
+  top: -5px;
   left: 58%;
   transform: translateX(-50%);
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 800;
   color: #173d22;
   line-height: 1;
