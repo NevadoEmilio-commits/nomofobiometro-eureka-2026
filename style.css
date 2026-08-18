@@ -67,6 +67,8 @@ body {
   margin: 0 1px;
   display: inline-block;
   object-fit: contain;
+  position: relative;
+  z-index: 1;
 }
 .o-brujula {
   position: relative;
@@ -82,6 +84,7 @@ body {
   font-weight: 800;
   color: #173d22;
   line-height: 1;
+  z-index: 5;
 }
 .subtitulo {
   text-align: center;
