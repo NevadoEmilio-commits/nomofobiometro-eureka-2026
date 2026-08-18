@@ -1,0 +1,90 @@
+/* ===== NOMOFOBIÓMETRO - EUREKA 2026 ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef0f2;
+  color: #173d22;
+  min-height: 100vh;
+}
+
+/* Contenedor que simula la pantalla vertical del diseño de Canva */
+.pantalla {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  padding: 18px 24px 40px;
+}
+
+/* Logos superiores */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-colegio {
+  width: 82px;
+  height: auto;
+}
+
+.logo-eureka {
+  width: 75px;
+  height: auto;
+}
+
+/* Textos */
+.area {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #39763d;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 800;
+  margin-top: 6px;
+  color: #173d22;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.05;
+  margin-top: 14px;
+  color: #353535;
+}
+
+/* Botón principal */
+.boton-comenzar {
+  display: block;
+  width: 250px;
+  margin: 25px auto 0;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 35px;
+
+  background: #22a56f;
+  color: white;
+
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton-comenzar:hover {
+  transform: scale(1.03);
+}
