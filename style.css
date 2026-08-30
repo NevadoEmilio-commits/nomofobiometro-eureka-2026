@@ -35,7 +35,7 @@ body {
   height: 8%;
 
   border: none;
-  background: transparent;
+  background: rgba(255, 0, 0, 0.25);
   cursor: pointer;
 }
 .respuestas-p1 {
@@ -44,31 +44,32 @@ body {
 
 .respuesta {
   position: absolute;
-  left: 10%;
-  width: 80%;
-  height: 7%;
+  left: 24%;
+  width: 52%;
+  height: 4%;
   border: none;
   background: transparent;
   cursor: pointer;
+  z-index: 10;
 }
 
 /* Ajustaremos estas posiciones según tu PNG */
 .r1 {
-  top: 43%;
+  top: 54%;
 }
 
 .r2 {
-  top: 51%;
-}
-
-.r3 {
   top: 59%;
 }
 
+.r3 {
+  top: 64%;
+}
+
 .r4 {
-  top: 67%;
+  top: 69%;
 }
 
 .r5 {
-  top: 75%;
+  top: 74%;
 }
