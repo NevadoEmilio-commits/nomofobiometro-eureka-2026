@@ -22,13 +22,33 @@
   aria-label="Comenzar el Nomofobiómetro"
   onclick="mostrarPregunta1()"
 ></button>
+  
+    <div class="respuestas-p1" id="respuestasP1">
+  <button class="respuesta r1" onclick="responderP1(1)" aria-label="Nunca"></button>
+  <button class="respuesta r2" onclick="responderP1(2)" aria-label="Rara vez"></button>
+  <button class="respuesta r3" onclick="responderP1(3)" aria-label="Algunas veces"></button>
+  <button class="respuesta r4" onclick="responderP1(4)" aria-label="Frecuentemente"></button>
+  <button class="respuesta r5" onclick="responderP1(5)" aria-label="Siempre"></button>
+</div>
 
   </main>
 
-  <script>
+<script>
+  let puntajeTotal = 0;
+
   function mostrarPregunta1() {
     document.querySelector(".imagen-portada").src = "imagenes/pregunta1.png";
     document.querySelector(".zona-comenzar").style.display = "none";
+    document.querySelector("#respuestasP1").style.display = "block";
+  }
+
+  function responderP1(valor) {
+    puntajeTotal += valor;
+
+    console.log("Respuesta P1:", valor);
+    console.log("Puntaje total:", puntajeTotal);
+
+    alert("Respuesta guardada");
   }
 </script>
 
