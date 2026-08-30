@@ -39,7 +39,7 @@
   function mostrarPregunta1() {
     document.querySelector(".imagen-portada").src = "imagenes/pregunta1.png";
     document.querySelector(".zona-comenzar").style.display = "none";
-    document.querySelector("#respuestasP1").style.display = "block";
+    document.querySelector("#respuestasP1").classList.add("activa");
   }
 
   function responderP1(valor) {
