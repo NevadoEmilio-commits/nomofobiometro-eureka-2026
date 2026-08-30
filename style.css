@@ -38,3 +38,37 @@ body {
   background: transparent;
   cursor: pointer;
 }
+.respuestas-p1 {
+  display: none;
+}
+
+.respuesta {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 7%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Ajustaremos estas posiciones según tu PNG */
+.r1 {
+  top: 43%;
+}
+
+.r2 {
+  top: 51%;
+}
+
+.r3 {
+  top: 59%;
+}
+
+.r4 {
+  top: 67%;
+}
+
+.r5 {
+  top: 75%;
+}
