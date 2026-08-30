@@ -38,38 +38,33 @@ body {
   background: rgba(255, 0, 0, 0.25);
   cursor: pointer;
 }
+
 .respuestas-p1 {
   display: none;
+  position: absolute;
+
+  left: 27%;
+  top: 59%;
+
+  width: 46%;
+  height: 24%;
+
+  grid-template-rows: repeat(5, 1fr);
+  gap: 3%;
+  z-index: 20;
+}
+
+.respuestas-p1.activa {
+  display: grid;
 }
 
 .respuesta {
-  position: absolute;
-  left: 24%;
-  width: 52%;
-  height: 4%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
   border: none;
-  background: transparent;
+  background: rgba(255, 0, 0, 0.20);
   cursor: pointer;
-  z-index: 10;
-}
-
-/* Ajustaremos estas posiciones según tu PNG */
-.r1 {
-  top: 54%;
-}
-
-.r2 {
-  top: 59%;
-}
-
-.r3 {
-  top: 64%;
-}
-
-.r4 {
-  top: 69%;
-}
-
-.r5 {
-  top: 74%;
 }
