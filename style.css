@@ -39,32 +39,4 @@ body {
   cursor: pointer;
 }
 
-.respuestas-p1 {
-  display: none;
-  position: absolute;
 
-  left: 27%;
-  top: 45%;
-
-  width: 46%;
-  height: 24%;
-
-  grid-template-rows: repeat(5, 1fr);
-  gap: 3%;
-  z-index: 20;
-}
-
-.respuestas-p1.activa {
-  display: grid;
-}
-
-.respuesta {
-  position: static !important;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-
-  border: none;
-  background: rgba(255, 0, 0, 0.20);
-  cursor: pointer;
-}
