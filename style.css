@@ -56,3 +56,8 @@ body {
   cursor: pointer;
   pointer-events: all;
 }
+.zona-siguiente {
+  fill: transparent;
+  cursor: pointer;
+  pointer-events: all;
+}
