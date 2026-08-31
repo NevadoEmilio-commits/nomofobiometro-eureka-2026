@@ -44,12 +44,20 @@
 
 <rect class="zona-prueba" x="103" y="552" width="190" height="24"
       onclick="responderP1(5)"></rect>
+
+<rect class="zona-siguiente"
+      x="90" y="635"
+      width="215" height="55"
+      onclick="siguienteP1()">
+</rect>
+
 </svg> 
   </main>
 
 <script>
   let puntajeTotal = 0;
-
+let respuestaP1 = null;
+  
   function mostrarPregunta1() {
     document.querySelector(".imagen-portada").src = "imagenes/pregunta1.png";
     document.querySelector(".zona-comenzar").style.display = "none";
@@ -57,12 +65,23 @@
   }
 
   function responderP1(valor) {
-    puntajeTotal += valor;
+  respuestaP1 = valor;
 
-    console.log("Respuesta P1:", valor);
-    console.log("Puntaje total:", puntajeTotal);
-   
+  console.log("Respuesta P1:", respuestaP1);
+}
+
+function siguienteP1() {
+  if (respuestaP1 === null) {
+    alert("Selecciona una respuesta antes de continuar.");
+    return;
   }
+
+  console.log("P1 guardada:", respuestaP1);
+
+  // Aquí después abriremos la Pregunta 2
+}
+
+ 
 </script>
 
 </body>
