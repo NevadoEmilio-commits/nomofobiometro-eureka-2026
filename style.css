@@ -59,6 +59,7 @@ body {
 }
 
 .respuesta {
+  position: static !important;
   width: 100%;
   padding: 0;
   margin: 0;
