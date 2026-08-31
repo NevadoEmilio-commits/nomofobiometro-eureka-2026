@@ -23,14 +23,28 @@
   onclick="mostrarPregunta1()"
 ></button>
   
-    <div class="respuestas-p1" id="respuestasP1">
-  <button class="respuesta r1" onclick="responderP1(1)" aria-label="Nunca"></button>
-  <button class="respuesta r2" onclick="responderP1(2)" aria-label="Rara vez"></button>
-  <button class="respuesta r3" onclick="responderP1(3)" aria-label="Algunas veces"></button>
-  <button class="respuesta r4" onclick="responderP1(4)" aria-label="Frecuentemente"></button>
-  <button class="respuesta r5" onclick="responderP1(5)" aria-label="Siempre"></button>
-</div>
+<svg
+  id="zonasP1"
+  class="zonas-pregunta"
+  viewBox="0 0 390 744"
+  preserveAspectRatio="none"
+  style="display:none;"
+>
+  <rect class="zona-prueba" x="105" y="405" width="180" height="28"
+        onclick="responderP1(1)"></rect>
 
+  <rect class="zona-prueba" x="105" y="447" width="180" height="28"
+        onclick="responderP1(2)"></rect>
+
+  <rect class="zona-prueba" x="105" y="489" width="180" height="28"
+        onclick="responderP1(3)"></rect>
+
+  <rect class="zona-prueba" x="105" y="531" width="180" height="28"
+        onclick="responderP1(4)"></rect>
+
+  <rect class="zona-prueba" x="105" y="573" width="180" height="28"
+        onclick="responderP1(5)"></rect>
+</svg> 
   </main>
 
 <script>
@@ -39,7 +53,7 @@
   function mostrarPregunta1() {
     document.querySelector(".imagen-portada").src = "imagenes/pregunta1.png";
     document.querySelector(".zona-comenzar").style.display = "none";
-    document.querySelector("#respuestasP1").classList.add("activa");
+    document.querySelector("#zonasP1").style.display = "block";
   }
 
   function responderP1(valor) {
