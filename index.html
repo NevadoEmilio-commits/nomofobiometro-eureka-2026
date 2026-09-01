@@ -57,7 +57,8 @@
 <script>
   let puntajeTotal = 0;
 let respuestaP1 = null;
-  let respuestaP2 = null;
+ let preguntaActual = 2;
+let respuestas = {};
   function mostrarPregunta1() {
     document.querySelector(".imagen-portada").src = "imagenes/pregunta1.png";
     document.querySelector(".zona-comenzar").style.display = "none";
@@ -75,32 +76,46 @@ function siguienteP1() {
     alert("Selecciona una respuesta antes de continuar.");
     return;
   }
-
+respuestas[1] = respuestaP1;
   document.querySelector(".imagen-portada").src = "imagenes/pregunta2.png";
 
   document.querySelector("#zonasP1").style.display = "block";
 
   document.querySelectorAll("#zonasP1 .zona-prueba").forEach((zona, indice) => {
-    zona.setAttribute("onclick", `responderP2(${indice + 1})`);
+    zona.setAttribute("onclick", `responderPregunta(${indice + 1})`);
   });
 
   document.querySelector(".zona-siguiente")
-    .setAttribute("onclick", "siguienteP2()");
+    .setAttribute("onclick", "siguientePregunta()");
 }
-function responderP2(valor) {
-  respuestaP2 = valor;
-  console.log("Respuesta P2:", respuestaP2);
+function responderPregunta(valor) {
+  respuestas[preguntaActual] = valor;
+
+  console.log(
+    "Respuesta P" + preguntaActual + ":",
+    respuestas[preguntaActual]
+  );
 }
 
-function siguienteP2() {
-  if (respuestaP2 === null) {
+function siguientePregunta() {
+  if (respuestas[preguntaActual] == null) {
     alert("Selecciona una respuesta antes de continuar.");
     return;
   }
 
-  console.log("P2 guardada:", respuestaP2);
+  console.log(
+    "P" + preguntaActual + " guardada:",
+    respuestas[preguntaActual]
+  );
 
-  // Después conectaremos aquí la Pregunta 3
+  if (preguntaActual < 12) {
+    preguntaActual++;
+
+    document.querySelector(".imagen-portada").src =
+      "imagenes/pregunta" + preguntaActual + ".png";
+  } else {
+    alert("Has completado las 12 preguntas.");
+  }
 }
  
 </script>
