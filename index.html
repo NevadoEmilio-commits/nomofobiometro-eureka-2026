@@ -127,8 +127,32 @@ function siguientePregunta() {
 }
 }
 function mostrarResultado() {
-  console.log("Aquí calcularemos el resultado final");
-} 
+  let total = 0;
+
+  // Preguntas 1 a 11
+  for (let i = 1; i <= 11; i++) {
+    total += respuestas[i];
+  }
+
+  // Pregunta 12: puntuación invertida
+  total += 6 - respuestas[12];
+
+  console.log("Puntaje final:", total);
+
+  let imagenResultado = "";
+
+  if (total <= 19) {
+    imagenResultado = "imagenes/resultado-verde.png";
+  } else if (total <= 27) {
+    imagenResultado = "imagenes/resultado-amarillo.png";
+  } else if (total <= 43) {
+    imagenResultado = "imagenes/resultado-naranja.png";
+  } else {
+    imagenResultado = "imagenes/resultado-rojo.png";
+  }
+
+  document.querySelector(".imagen-portada").src = imagenResultado;
+}
 </script>
 
 </body>
