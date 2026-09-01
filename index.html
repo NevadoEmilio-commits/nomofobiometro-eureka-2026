@@ -108,16 +108,27 @@ function siguientePregunta() {
     respuestas[preguntaActual]
   );
 
-  if (preguntaActual < 12) {
-    preguntaActual++;
+ if (preguntaActual < 12) {
+  preguntaActual++;
 
-    document.querySelector(".imagen-portada").src =
-      "imagenes/pregunta" + preguntaActual + ".png";
-  } else {
-    alert("Has completado las 12 preguntas.");
-  }
+  document.querySelector(".imagen-portada").src =
+    "imagenes/pregunta" + preguntaActual + ".png";
+
+} else {
+
+  document.querySelector(".imagen-portada").src =
+    "imagenes/analizando.png";
+
+  document.querySelector("#zonasP1").style.display = "none";
+
+  setTimeout(() => {
+    mostrarResultado();
+  }, 3000);
 }
- 
+}
+function mostrarResultado() {
+  console.log("Aquí calcularemos el resultado final");
+} 
 </script>
 
 </body>
