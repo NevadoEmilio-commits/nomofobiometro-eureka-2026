@@ -156,6 +156,8 @@ function mostrarResultado() {
   }
 
   document.querySelector(".imagen-portada").src = imagenResultado;
+  document.querySelector(".zona-siguiente").style.display = "none";
+document.querySelector(".zona-continuar").style.pointerEvents = "all";
  }
   function mostrarCierre() {
   document.querySelector(".imagen-portada").src = "imagenes/cierre.png";
@@ -167,6 +169,7 @@ function mostrarResultado() {
 
   document.querySelector(".zona-siguiente")
     .style.display = "none";
+    document.querySelector(".zona-continuar").style.pointerEvents = "none";
 }
 </script>
 
