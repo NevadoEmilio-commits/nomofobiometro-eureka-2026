@@ -156,6 +156,9 @@ function mostrarResultado() {
   }
 
   document.querySelector(".imagen-portada").src = imagenResultado;
+  
+  document.querySelector("#zonasP1").style.display = "block";
+  document.querySelector(".zona-continuar").style.fill = "rgba(255, 0, 0, 0.30)";
   document.querySelector(".zona-siguiente").style.display = "none";
 document.querySelector(".zona-continuar").style.pointerEvents = "all";
  }
