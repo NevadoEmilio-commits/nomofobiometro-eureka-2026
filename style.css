@@ -62,7 +62,7 @@ body {
   pointer-events: all;
 }
 .zona-continuar {
-  fill: rgba(255, 0, 0, 0.30);
+  fill: transparent;
   cursor: pointer;
   pointer-events: none;
 }
