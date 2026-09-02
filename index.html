@@ -152,6 +152,20 @@ function mostrarResultado() {
   }
 
   document.querySelector(".imagen-portada").src = imagenResultado;
+  setTimeout(() => {
+  mostrarCierre();
+}, 5000);
+}
+  function mostrarCierre() {
+  document.querySelector(".imagen-portada").src = "imagenes/cierre.png";
+
+  document.querySelector("#zonasP1").style.display = "block";
+
+  document.querySelectorAll("#zonasP1 .zona-prueba")
+    .forEach(zona => zona.style.display = "none");
+
+  document.querySelector(".zona-siguiente")
+    .style.display = "none";
 }
 </script>
 
