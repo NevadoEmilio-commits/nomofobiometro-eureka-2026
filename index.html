@@ -50,7 +50,11 @@
       width="180" height="42"
       onclick="siguienteP1()">
 </rect>
-
+<rect class="zona-continuar"
+      x="105" y="610"
+      width="180" height="42"
+      onclick="mostrarCierre()">
+</rect>
 </svg> 
   </main>
 
@@ -152,10 +156,7 @@ function mostrarResultado() {
   }
 
   document.querySelector(".imagen-portada").src = imagenResultado;
-  setTimeout(() => {
-  mostrarCierre();
-}, 5000);
-}
+ }
   function mostrarCierre() {
   document.querySelector(".imagen-portada").src = "imagenes/cierre.png";
 
