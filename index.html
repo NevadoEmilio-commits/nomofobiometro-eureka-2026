@@ -55,6 +55,17 @@
       width="220" height="50"
       onclick="mostrarCierre()">
 </rect>
+  <rect class="zona-video"
+      x="82" y="500"
+      width="226" height="55"
+      onclick="abrirVideo()">
+</rect>
+
+<rect class="zona-inicio"
+      x="82" y="570"
+      width="226" height="55"
+      onclick="volverInicio()">
+</rect>
 </svg> 
   </main>
 
@@ -172,6 +183,13 @@ document.querySelector(".zona-continuar").style.pointerEvents = "all";
   document.querySelector(".zona-siguiente")
     .style.display = "none";
     document.querySelector(".zona-continuar").style.pointerEvents = "none";
+}
+  function abrirVideo() {
+  window.open("https://youtu.be/cFzMe4WCJn4", "_blank");
+}
+
+function volverInicio() {
+  location.reload();
 }
 </script>
 
