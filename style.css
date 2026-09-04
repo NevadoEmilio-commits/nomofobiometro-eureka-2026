@@ -66,3 +66,9 @@ body {
   cursor: pointer;
   pointer-events: none;
 }
+.zona-video,
+.zona-inicio {
+  fill: transparent;
+  cursor: pointer;
+  pointer-events: all;
+}
