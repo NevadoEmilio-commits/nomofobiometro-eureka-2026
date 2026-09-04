@@ -68,7 +68,18 @@ body {
 }
 .zona-video,
 .zona-inicio {
-  fill: transparent;
+  fill: rgba(0, 0, 0, 0);
+  stroke: none;
   cursor: pointer;
   pointer-events: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.zona-video:focus,
+.zona-video:active,
+.zona-inicio:focus,
+.zona-inicio:active {
+  fill: rgba(0, 0, 0, 0);
+  stroke: none;
+  outline: none;
 }
