@@ -113,9 +113,9 @@ body {
   position: absolute;
   left: 50%;
   top: 64%;
-  width: 54px;
-  height: 54px;
-  margin-left: -27px;
+ width: 64px;
+height: 64px;
+margin-left: -32px;
   border: 5px solid rgba(46, 125, 50, 0.25);
   border-top-color: #2e7d32;
   border-radius: 50%;
