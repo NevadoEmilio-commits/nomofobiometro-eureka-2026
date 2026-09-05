@@ -115,6 +115,7 @@ body {
   top: 75%;
   transform: translate(-50%, -50%);
   font-size: 34px;
+  color: black;
   display: none;
   z-index: 40;
   animation: moverLupa 0.8s ease-in-out infinite alternate;
