@@ -109,27 +109,23 @@ body {
   width: 46%;
   height: 5%;
 }
-.spinner-analizando {
+.lupa-analizando {
   position: absolute;
   left: 50%;
-  top: 58%;
-  width: 34px;
-  height: 34px;
-  margin-left: -17px;
-  border: 4px solid rgba(255, 255, 255, 0.35);
-  border-top-color: white;
-  border-radius: 50%;
-  animation: girar 0.8s linear infinite;
+  top: 61%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
   display: none;
   z-index: 40;
+  animation: moverLupa 0.8s ease-in-out infinite alternate;
 }
 
-@keyframes girar {
+@keyframes moverLupa {
   from {
-    transform: rotate(0deg);
+    transform: translate(-56%, -50%) rotate(-8deg);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: translate(-44%, -50%) rotate(8deg);
   }
 }
