@@ -16,7 +16,7 @@
       alt="Portada del Nomofobiómetro"
       class="imagen-portada"
     >
-<div class="lupa-analizando">🔍</div>
+<div class="spinner-analizando"></div>
 <button
   class="zona-comenzar"
   aria-label="Comenzar el Nomofobiómetro"
@@ -134,7 +134,7 @@ function siguientePregunta() {
 
   document.querySelector(".imagen-portada").src =
     "imagenes/analizando.png";
-document.querySelector(".lupa-analizando").style.display = "block";
+document.querySelector(".spinner-analizando").style.display = "block";
   document.querySelector("#zonasP1").style.display = "none";
 
   setTimeout(() => {
@@ -143,7 +143,7 @@ document.querySelector(".lupa-analizando").style.display = "block";
 }
 }
 function mostrarResultado() {
-  document.querySelector(".lupa-analizando").style.display = "none";
+  document.querySelector(".spinner-analizando").style.display = "none";
   let total = 0;
 
   // Preguntas 1 a 11
