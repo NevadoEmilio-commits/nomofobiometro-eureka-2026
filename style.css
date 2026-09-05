@@ -109,3 +109,27 @@ body {
   width: 46%;
   height: 5%;
 }
+.spinner-analizando {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  width: 34px;
+  height: 34px;
+  margin-left: -17px;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
+  display: none;
+  z-index: 40;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
