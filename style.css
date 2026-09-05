@@ -109,24 +109,27 @@ body {
   width: 46%;
   height: 5%;
 }
-.lupa-analizando {
+.spinner-analizando {
   position: absolute;
   left: 50%;
-  top: 75%;
-  transform: translate(-50%, -50%);
-  font-size: 34px;
-  filter: grayscale(1) brightness(0);
+  top: 64%;
+  width: 54px;
+  height: 54px;
+  margin-left: -27px;
+  border: 5px solid rgba(46, 125, 50, 0.25);
+  border-top-color: #2e7d32;
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
   display: none;
   z-index: 40;
-  animation: moverLupa 0.8s ease-in-out infinite alternate;
 }
 
-@keyframes moverLupa {
+@keyframes girar {
   from {
-    transform: translate(-56%, -50%) rotate(-8deg);
+    transform: rotate(0deg);
   }
 
   to {
-    transform: translate(-44%, -50%) rotate(8deg);
+    transform: rotate(360deg);
   }
 }
